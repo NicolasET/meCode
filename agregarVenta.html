@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>AGREGAR VENTA</h1>
+        <img src="/IMG/plus.svg" class="imgTitulo">
+    </header>
+    <section class="container">
+        <form action="">
+            <ul class="flex-outer">
+                <li>
+                    <label for="idProducto">Ingrese ID del producto:</label>
+                    <input type="text" name="idProducto" id="idProducto">
+                </li>
+                <li>
+                    <label for="selectProducto">Producto seleccionado:</label>
+                    <input type="text" name="selectProducto" id="selectProducto" readonly>
+                </li>
+                <li>
+                    <label for="cantidadProducto">Seleccione cantidad:</label>
+                    <input type="number" name="cantidadProducto" id="cantidadProducto" min="0">
+                </li>
+                <li>
+                    <label for="addProducto">Agregar producto al carrito:</label>
+                    <button name="addProducto" id="addProducto">+</button>
+                </li>
+                <li>
+                    <label for="idVendedor">ID vendedor:</label>
+                    <input type="text" name="idVendedor" id="idVendedor">
+                </li>
+                <li>
+                    <label for="nameVendedor">Nombre del vendedor:</label>
+                    <input type="text" name="nameVendedor" id="nameVendedor">
+                </li>
+                <li>
+                    <label for="dateVenta">Fecha de la venta:</label>
+                    <input type="date" name="dateVenta" id="dateVenta">
+                </li>
+                <li>
+                    <label for="ccCliente">CC Cliente:</label>
+                    <input type="text" name="ccCliente" id="ccCliente">
+                </li>
+                <li>
+                    <label for="fNameCliente">Nombres y apellidos del cliente:</label>
+                    <input type="text" name="fNameCliente" id="fNameCliente">
+                </li>
+            </ul>
+        </form>
+        <section class="results">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Producto</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Valor</th>
+                        <th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>P001</td>
+                        <td>Mueble</td>
+                        <td>4</td>
+                        <td>$500.000</td>
+                        <td>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+    <section class="buttons">
+        <button>Cancelar</button>
+        <button>Confirmar venta</button>
+    </section>
+</body>
+</html>
